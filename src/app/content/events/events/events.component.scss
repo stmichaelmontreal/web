@@ -1,0 +1,80 @@
+:host {
+    position: absolute;
+    top: 3.3rem;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: auto;
+}
+
+.sm-event-item {
+    flex: auto;
+    position: relative;
+    flex-grow: 0;
+    flex-shrink: 0;
+    min-height: min-content;
+    display: flex;
+    flex-direction: column;
+    align-content: stretch;
+    max-width: 1024px;
+}
+
+.sm-event-title {
+    line-height: 1.5rem;
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin: 0.3rem;
+}
+
+.sm-event-more {
+    flex: 1;
+    max-height: 5rem;
+    font-size: 1.4rem;
+    margin: 1rem;
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.sm-event-text {
+    flex: 1;
+    overflow: hidden;
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.sm-event-text /deep/ p {
+    display: none;
+    margin: 1rem;
+    font-size: 1.4rem;
+    text-align: justify;
+}
+
+.sm-event-text /deep/ h2 {
+    font-size: 1.8rem;
+    text-align: justify;
+}
+
+.sm-event-text /deep/ img {
+    height: auto;
+    width: 100%;
+}
+
+.more /deep/ .sm-event-text {
+    margin-bottom: 1.3rem;
+    &:hover {
+        cursor: auto;
+    }
+}
+
+.more /deep/ img {
+    display: flex;
+}
+
+.more /deep/ p {
+    display: flex;
+}

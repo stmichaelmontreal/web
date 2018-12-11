@@ -1,0 +1,49 @@
+:host {
+    position: absolute;
+    top: 3.3rem;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: auto;
+}
+
+.sm-history-container {
+    flex: auto;
+    position: relative;
+    flex-grow: 0;
+    flex-shrink: 0;
+    min-height: min-content;
+    display: flex;
+    flex-direction: column;
+    align-content: stretch;
+    max-width: 1024px;
+    margin-bottom: 1rem;
+}
+
+.sm-event-text {
+    flex: 1;
+    overflow: hidden;
+}
+
+.sm-event-text /deep/ p {
+    margin: 1rem;
+    font-size: 1.4rem;
+    text-align: justify;
+}
+
+.sm-event-text /deep/ h2 {
+    margin: 1rem;
+    font-size: 1.8rem;
+    text-align: justify;
+}
+
+.sm-event-text /deep/ img {
+    float: left;
+    height: auto;
+    width: 30rem;
+    max-width: 100%;
+    margin: 20px;
+}

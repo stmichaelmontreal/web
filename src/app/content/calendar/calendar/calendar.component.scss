@@ -1,0 +1,73 @@
+:host {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    //background: #3A84DF;
+    background: black;
+    color: white;
+}
+
+.main-top-img {
+    position: absolute;
+    top: 4%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('../../../../assets/img/calendar.jpg') no-repeat top;
+    background-size: auto 100%;
+    //background-color: black;
+    z-index: 0;
+    opacity: 0.55;
+}
+
+.sm-calendar-container {
+    z-index: 1;
+    position: absolute;
+    top: 10%;
+    bottom: 5%;
+    flex: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 1024px;
+    font-size: 1.5rem;
+    overflow-y: auto;
+}
+
+.sm-date-item {
+    margin: 1rem;
+    //max-width: 1024px;
+}
+
+.sm-time-item {
+    //max-width: 1024px;
+    margin-left: 3rem;
+}
+
+.sm-time-item /deep/ p {
+    margin: 0.5rem;
+}
+
+//.sm-date-item /deep/ p {
+//    font-size: 18px;
+//    text-align: justify;
+//}
+//
+//.sm-date-item /deep/ h2 {
+//    font-size: 20px;
+//    text-align: justify;
+//}
+//
+//.sm-date-item /deep/ img {
+//    float: left;
+//    margin: 20px;
+//}
+
+.mmr-3 {
+    margin-right: 3rem;
+}

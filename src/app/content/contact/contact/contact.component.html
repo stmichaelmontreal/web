@@ -1,0 +1,68 @@
+<div class="address-container">
+    <b>Уkрaїнська Греко-Католицька парохія Святого Архистратига Михаїла</b>
+    <div>Наш e-mail:
+        <a  href="mailto:tserkvasvmykhaila@gmail.com" target="_blank"><b>tserkvasvmykhaila@gmail.com</b></a>
+    </div>
+    <div>{{this.ourphone}} <b>{{this.phone}}</b></div>
+    <div class="address">{{this.ouraddress}} <b>{{this.address}}</b></div>
+    <div>{{this.ourlocation}}</div>
+</div>
+
+<div class="agm-container">
+    <agm-map class=""
+        [latitude]="this.lat" [longitude]="this.lng" [zoom]="15"
+             [disableDoubleClickZoom]="true"
+             [disableDefaultUI]="true"
+             [usePanning]="true"
+             [mapTypeControl]="true"
+             [panControl]="true">
+        <agm-marker
+            [latitude]="this.mLat"
+            [longitude]="this.mLng">
+            <agm-snazzy-info-window [isOpen]="true" [closeWhenOthersOpen]="true"
+                                    >
+                <ng-template>
+                    <div class="direction-container">
+                        <div class="direction-container-left">
+                            <div class="direction-title">
+                                <b>{{this.stmichaelfull}}</b>
+                            </div>
+                            <div class="direction-address">
+                                {{this.address}}
+                            </div>
+                            <div class="review-box">
+                                <div class="review-number">5.0</div>
+                                <div class="bg start-icon"></div>
+                                <div class="bg start-icon"></div>
+                                <div class="bg start-icon"></div>
+                                <div class="bg start-icon"></div>
+                                <div class="bg start-icon"></div>
+
+                                <a target="_blank"
+                                   href="http://www.google.ca/search?q=St.+Michael's+Ukrainian+Catholic+Parish+Montreal,+2388+Rue+d'Iberville,+Montreal,+QC+H2K+3C6&amp;ludocid=6211100599585612170#lrd=0x4cc91b953f8e5571:0x563243166684218a,1"
+                                   class="review-link">
+                                    7 {{this.reviews}}
+                                </a>
+                            </div>
+                            <div class="review-box">
+                                <a target="_blank"
+                                   href="https://maps.google.com/maps?ll=45.535102,-73.558597&amp;z=16&amp;t=m&amp;hl=en-GB&amp;gl=CA&amp;mapclient=embed&amp;cid=6211100599585612170"
+                                   class="review-link">
+                                    {{this.viewlargermap}}
+                                </a>
+                            </div>
+                        </div>
+                        <div class="direction-container-right">
+                            <a class="map-direction-link"
+                               target="_blank"
+                               href="https://maps.google.com/maps?ll=45.535102,-73.558597&amp;z=16&amp;t=m&amp;hl=en-GB&amp;gl=CA&amp;mapclient=embed&amp;daddr=St.%20Michael's%20Ukrainian%20Catholic%20Parish%20Montreal%202388%20Rue%20d'Iberville%20Montreal%2C%20QC%20H2K%203C6@45.5346515,-73.5586828">
+                                <div class="bg direction-icon"></div>
+                                <div class="text">{{this.direction}}</div>
+                            </a>
+                        </div>
+                    </div>
+                </ng-template>
+            </agm-snazzy-info-window>
+        </agm-marker>
+    </agm-map>
+</div>

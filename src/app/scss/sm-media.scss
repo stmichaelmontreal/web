@@ -1,0 +1,58 @@
+.md-show {
+    display: none;
+}
+
+.md-hide {
+    display: flex;
+}
+
+.md-background {
+    //background-color: green;
+}
+
+.md-md-font {
+    font-size: 22px;
+}
+
+.md-st-font {
+    font-size: 2rem;
+}
+
+.md-h1 {
+    font-size: 40px;
+}
+
+.m-10 {
+    margin: 10px;
+}
+
+.m-20 {
+    margin: 20px;
+}
+
+@media (min-resolution: 2dppx) {
+    .md-show {
+        display: flex !important;
+    }
+    .md-hide {
+        display: none !important;
+    }
+    .md-background {
+        //background-color: red !important;
+    }
+}
+
+//@media (min-width: 1024px) {
+//    .md-h1 {
+//        font-size: 50px;
+//    }
+//}
+
+@media (min-resolution: 2dppx) {
+    html {
+        font-size: 10px !important;
+    }
+    .goog-te-gadget-simple {
+        font-size: 9px !important;
+    }
+}

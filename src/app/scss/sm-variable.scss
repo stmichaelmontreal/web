@@ -1,0 +1,79 @@
+$border-width: 1px;
+$border-style: solid;
+
+$colors: (
+    transparent-: (
+        0: transparent
+    ),
+    white-: (
+        0: white
+    ),
+    black-: (
+        0: black
+    ),
+    gray-: (
+        0: grey,
+),
+    blue-: (
+        0: blue,
+    ),
+    red-: (
+        0: red,
+    ),
+    yellow-: (
+        0: yellow,
+    ),
+    green-: (
+        0: green,
+    )
+);
+
+$spacers: (
+    0: (
+        x: 0,
+        y: 0
+    ),
+    5: (
+        x: 5px,
+        y: 5px
+    ),
+    10: (
+        x: 10px,
+        y: 10px
+    ),
+    15: (
+        x: 15px,
+        y: 15px
+    ),
+    20: (
+        x: 20px,
+        y: 20px
+    ),
+);
+
+$sizes: (
+    0: (
+        w: 0,
+        h: 0
+    ),
+    5: (
+        w: 5px,
+        h: 5px
+    ),
+    10: (
+        w: 10px,
+        h: 10px
+    ),
+    20: (
+        w: 20px,
+        h: 20px
+    ),
+    25: (
+        w: 25px,
+        h: 25px
+    ),
+    30: (
+        w: 30px,
+        h: 30px
+    ),
+);

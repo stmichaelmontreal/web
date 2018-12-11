@@ -1,0 +1,28 @@
+<div class="main-top-img"></div>
+
+<!--<nav class="main-menu">-->
+<!--<a routerLink="calendar" routerLinkActive="active">{{this.calendar}}</a>-->
+<!--<a href="">{{this.bulletin}}</a>-->
+<!--<a routerLink="events" routerLinkActive="active">{{this.events}}</a>-->
+<!--<a routerLink="history" routerLinkActive="active">{{this.history}}</a>-->
+<!--<a routerLink="contact" routerLinkActive="active">{{this.contact}}</a>-->
+
+<!--</nav>-->
+
+<div class="menu-container">
+    <div class="menu-buttons" (click)="this.navigateCommand(Menus.Calendar)">
+        {{this.calendar}}
+    </div>
+    <div class="menu-buttons" (click)="this.navigateCommand(Menus.Bulletin)">
+        {{this.bulletin}}
+    </div>
+    <div class="menu-buttons" (click)="this.navigateCommand(Menus.Events)">
+        {{this.events}}
+    </div>
+    <div class="menu-buttons" (click)="this.navigateCommand(Menus.History)">
+        {{this.history}}
+    </div>
+    <div class="menu-buttons" (click)="this.navigateCommand(Menus.Contact)">
+        {{this.contact}}
+    </div>
+</div>

@@ -1,0 +1,141 @@
+:host {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    ////justify-content: center;
+    //align-items: center;
+    background: white;
+    color: black;
+    overflow-y: auto;
+}
+
+.address-container {
+    //position: relative;
+    //top: 3rem;
+    //left: 0;
+    //right: 0;
+    //bottom: 20rem;
+    //z-index: 0;
+    flex: auto;
+    flex-grow: 0;
+    min-height: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 3.5rem;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+
+    .address {
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+    }
+}
+
+.agm-container {
+    flex: auto;
+    display: flex;
+    flex-direction: column;
+    //max-width: 1024px;
+    //height: 50rem;
+    //width: 100%;
+}
+
+agm-map {
+    flex: auto;
+    display: flex;
+    flex-direction: column;
+    //height: 100%;
+    //width: 100%;
+}
+
+agm-map /deep/ .agm-map-container-inner {
+    flex: auto;
+}
+
+
+.bg {
+    background-image: url("https://maps.gstatic.com/mapfiles/embed/images/entity11.png");
+    background-size: 70px 210px;
+    &.direction-icon {
+        width: 22px;
+        height: 22px;
+        background-position: 0 0;
+    }
+    &.start-icon {
+        width: 11px;
+        height: 11px;
+        background-position: 48px 165px;
+    }
+}
+
+.direction-container {
+    //flex: 1 1 45rem;
+    display: flex;
+    width: 27rem;
+    //width: 325px;
+}
+
+.direction-container-left {
+    display: flex;
+    //flex: 1 1 255px;
+    flex: 1 1 20rem;
+    flex-direction: column;
+}
+
+.direction-container-right {
+    flex: auto;
+    display: flex;
+    //flex: 1 1 90px;
+    //flex: 1 1 1rem;
+    flex-direction: column;
+    //padding-left: 1rem;
+}
+
+.direction-title {
+    font-size: 1rem;
+    padding-bottom: 0.5rem;
+}
+
+.direction-address {
+    font-size: 1rem;
+    padding-bottom: 0.5rem;
+}
+
+.map-direction-link {
+    flex: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    //width: 6rem;
+    .text {
+        font-size: 1rem;
+        color: #3A84DF;
+    }
+    &:hover {
+        cursor: pointer;
+        .text {
+            text-decoration: underline;
+        }
+    }
+}
+
+.review-box {
+    display: flex;
+    padding-bottom: 0.3rem;
+    font-size: 1rem;
+
+    .review-number {
+        color: #E7711B;
+    }
+    .review-link {
+        padding-left: 0.3rem;
+        font-size: 1rem;
+        color: #3A84DF;
+    }
+}

@@ -1,0 +1,8 @@
+<div *ngFor="let event of this.events" class="sm-event-item" [ngClass]="{'more':event.isShowMore}">
+    <div class="sm-event-title">{{event.title}}</div>
+    <div *ngIf="event.isShowMore" class="sm-event-text" [innerHtml]="event.htmlData"></div>
+    <a *ngIf="!event.isShowMore" (click)="this.readMore(event)">
+        <div class="sm-event-text" [innerHtml]="event.htmlData"></div>
+        <div class="sm-event-more">{{event.description}}</div>
+    </a>
+</div>

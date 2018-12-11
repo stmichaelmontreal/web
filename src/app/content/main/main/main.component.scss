@@ -1,0 +1,61 @@
+:host {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #3A84DF;
+    //background: linear-gradient(to bottom, white, gray 5%, gray 70%, #901e1d 30%);
+    color: white;
+}
+
+.main-top-img {
+    position: absolute;
+    top: 4%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('../../../../assets/img/home_2.jpg') no-repeat top;
+    background-size: auto 100%;
+    //background-size: contain;
+    z-index: 0;
+    opacity: 0.5;
+}
+
+.menu-container {
+    position: absolute;
+    top: 10%;
+    bottom: 5%;
+    z-index: 1;
+    display: flex;
+    flex: auto;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 1024px;
+    width: 100%;
+}
+
+.menu-buttons {
+    flex: auto;
+    //height: 2.5rem;
+    margin: 1rem;
+    border: white 0.2rem solid;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 3rem;
+
+    &.lang {
+        border: none;
+    }
+}
+
+.menu-buttons:hover {
+    cursor: pointer;
+    background-color: goldenrod;
+}
