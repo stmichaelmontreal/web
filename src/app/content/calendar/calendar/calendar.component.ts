@@ -14,7 +14,7 @@ export class CalendarComponent implements OnInit {
     }
 
     private static getDayOfWeek(date: string) {
-        switch (new Date(Date.parse('2018-09-24')).getDay()) {
+        switch (new Date(Date.parse(date)).getDay()) {
             case 0:
                 return 'Понеділок';
             case 1:
@@ -33,7 +33,7 @@ export class CalendarComponent implements OnInit {
     }
 
     ngOnInit() {
-        this.calendar = Calendar.y2018;
+        this.calendar = Calendar.y2019;
         // .filter(f => new Date(Date.parse(f.date)).getTime() >= new Date().getTime());
         // Calendar.y2018.forEach((data) => console.log(new Date(Date.parse(data.date)).getTime()));
         this.calendar.forEach((item) => item.week = Calendar.getDayOfWeek(item.date));
