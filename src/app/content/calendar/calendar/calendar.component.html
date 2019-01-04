@@ -8,6 +8,10 @@
         </div>
     </div>
 
+    
+    
+    
+    
     <!--<span class="md-md-font"-->
     <!--style="display: flex; justify-content: space-between; padding-left: 20px; padding-right: 20px;">-->
     <!--<b>Ч.13-04-2018</b><b>01 квітня 2018</b>-->
@@ -59,3 +63,42 @@
 
     <!--</p>-->
 </div>
+
+
+
+
+<div class="header">
+
+</div>
+
+<div class="month-view">
+  <div class="week-header">
+    <ng-template ngFor let-day [ngForOf]="['Mn','Th','W','Tr','Fr','Sa','Su']">
+      <b class="day-header">{{day}}</b>
+    </ng-template>
+  </div>
+
+  <ng-template ngFor let-day [ngForOf]="[1,2,3,4,5]">
+    <div class="week">
+
+      <ng-template ngFor let-day [ngForOf]="[1,2,3,4,5,6,7]" let-isFirst="first">
+        <div class="day" [ngClass]="{'bl':!isFirst}">
+          <div class="num">
+            12
+          </div>
+          <div class="hours">
+            <div class="hour">
+              18:00 - Vechirna
+            </div>
+            <div class="hour">
+              18:00 - Sv. Liturgiy
+            </div>
+          </div>
+        </div>
+      </ng-template>
+
+    </div>
+  </ng-template>
+
+</div>
+
