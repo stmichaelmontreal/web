@@ -33,8 +33,10 @@ export class CalendarComponent implements OnInit {
     }
 
     ngOnInit() {
-        this.calendar = Calendar.y2019;
-        // .filter(f => new Date(Date.parse(f.date)).getTime() >= new Date().getTime());
+        const today = new Date();
+        today.setDate(today.getDate() - 2);
+        this.calendar = Calendar.y2019
+            .filter(f => new Date(Date.parse(f.date)).getTime() > today.getTime());
         // Calendar.y2018.forEach((data) => console.log(new Date(Date.parse(data.date)).getTime()));
         this.calendar.forEach((item) => item.week = Calendar.getDayOfWeek(item.date));
         // console.log('Now:', Date.now().toString());

@@ -67,35 +67,35 @@
 
 
 
-<div class="header">
-    < {{month.name}}  >
-</div>
+<!--<div class="header">-->
+    <!--< {{month.name}}  >-->
+<!--</div>-->
 
-<div class="month-view">
-  <div class="week-header">
-    <ng-template ngFor let-day [ngForOf]="['Пн','Вт','Ср','Чт','Пт','Сб','Нд']">
-      <b class="day-header">{{day}}</b>
-    </ng-template>
-  </div>
+<!--<div class="month-view">-->
+  <!--<div class="week-header">-->
+    <!--<ng-template ngFor let-day [ngForOf]="['Пн','Вт','Ср','Чт','Пт','Сб','Нд']">-->
+      <!--<b class="day-header">{{day}}</b>-->
+    <!--</ng-template>-->
+  <!--</div>-->
 
-  <ng-template ngFor let-week [ngForOf]="month.weeks">
-    <div class="week">
+  <!--<ng-template ngFor let-week [ngForOf]="month.weeks">-->
+    <!--<div class="week">-->
 
-      <ng-template ngFor let-day [ngForOf]="week.days" let-isFirst="first">
-        <div class="day" [ngClass]="{'bl':!isFirst}">
-          <div class="num">
-            {{day.num}}
-          </div>
-          <div class="hours">
-            <div *ngFor="let hour of day.hours" class="hour">
-              {{hour.num}} - {{hour.text}}
-            </div>
-          </div>
-        </div>
-      </ng-template>
+      <!--<ng-template ngFor let-day [ngForOf]="week.days" let-isFirst="first">-->
+        <!--<div class="day" [ngClass]="{'bl':!isFirst}">-->
+          <!--<div class="num">-->
+            <!--{{day.num}}-->
+          <!--</div>-->
+          <!--<div class="hours">-->
+            <!--<div *ngFor="let hour of day.hours" class="hour">-->
+              <!--{{hour.num}} - {{hour.text}}-->
+            <!--</div>-->
+          <!--</div>-->
+        <!--</div>-->
+      <!--</ng-template>-->
 
-    </div>
-  </ng-template>
+    <!--</div>-->
+  <!--</ng-template>-->
 
-</div>
+<!--</div>-->
 
