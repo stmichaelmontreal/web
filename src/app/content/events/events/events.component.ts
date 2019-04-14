@@ -4,18 +4,21 @@ import {DomSanitizer} from '@angular/platform-browser';
 import {Event} from './events.component.model';
 import {Observable} from 'rxjs';
 import {concatAll, flatMap, map} from 'rxjs/operators';
+import {EventsService} from './events.service';
 
 @Component({
     selector: 'sm-events',
     templateUrl: './events.component.html',
-    styleUrls: ['./events.component.scss']
+    styleUrls: ['./events.component.scss'],
+    providers: [EventsService]
 })
 export class EventsComponent implements OnInit {
 
     public events: Array<Event> = [];
-    private path = './assets/templates/events/';
+    private path = './assets/templates/admin-events/';
 
-    constructor(private http: HttpClient,
+    constructor(private sEvents: EventsService,
+                private http: HttpClient,
                 private sanitizer: DomSanitizer) {
     }
 

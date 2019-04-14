@@ -24,6 +24,10 @@ const appRoutes: Routes = [
         loadChildren: './content/contact/contact.module#ContactModule'
     },
     {
+        path: 'admin',
+        loadChildren: './admin/admin-events/admin-events.module#AdminEventsModule'
+    },
+    {
         path: '', redirectTo: 'main', pathMatch: 'full'
     },
     {path: '**', component: PageNotFoundComponent}
