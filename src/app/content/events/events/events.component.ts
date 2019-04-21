@@ -15,7 +15,7 @@ import {EventsService} from './events.service';
 export class EventsComponent implements OnInit {
 
     public events: Array<Event> = [];
-    private path = './assets/templates/admin-events/';
+    private path = './assets/templates/events/';
 
     constructor(private sEvents: EventsService,
                 private http: HttpClient,
@@ -30,18 +30,18 @@ export class EventsComponent implements OnInit {
                     return this.getEventFile(event);
                 }),
                 concatAll()
-            )
-            .subscribe(() => console.log(this.events));
+            ).subscribe();
+            // .subscribe(() => console.log(this.events));
     }
 
     public readMore(event: Event) {
         event.isShowMore = true;
-        console.log(event);
+        // console.log(event);
     }
 
     private getEventFile(event: Event): Observable<any> {
         const fileName = this.path + event.file;
-        console.log('file: ', fileName);
+        // console.log('file: ', fileName);
         return this.http.get(fileName, {responseType: 'text'})
             .pipe(map((data: any) => this.events.push(
                 <Event>{
